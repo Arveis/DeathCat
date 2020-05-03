@@ -1,0 +1,2 @@
+E:\GameJams\DeathCat\DeathCat\Intermediate\Build\Win64\UE4Editor\Development\DeathCat\Definitions.DeathCat.h
+E:\GameJams\DeathCat\DeathCat\Source\DeathCat\DeathCat.h

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "DeathCat",
+			"Path": "E:\\GameJams\\DeathCat\\DeathCat\\Source\\DeathCat.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "DeathCatEditor",
+			"Path": "E:\\GameJams\\DeathCat\\DeathCat\\Source\\DeathCatEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
