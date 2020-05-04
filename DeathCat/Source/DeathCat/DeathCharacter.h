@@ -6,6 +6,14 @@
 #include "PaperCharacter.h"
 #include "DeathCharacter.generated.h"
 
+UENUM(BlueprintType)
+enum EMovementDirection
+{
+	Up     UMETA(DisplayName = "Up"),
+	Down   UMETA(DisplayName = "Down"),
+	Left   UMETA(DisplayName = "Left"),
+	Right  UMETA(DisplayName = "Right")
+};
 /**
  *
  */
@@ -24,7 +32,7 @@ class DEATHCAT_API ADeathCharacter : public APaperCharacter
 		class USpringArmComponent* CameraBoom;
 
 	class UTextRenderComponent* TextComponent;
-	virtual void Tick(float DeltaSeconds) override;
+	//virtual void Tick(float DeltaSeconds) override;
 protected:
 	// The animation to play while running around
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
@@ -35,15 +43,15 @@ protected:
 		class UPaperFlipbook* IdleAnimation;
 
 	/** Called to choose the correct animation to play based on the character's movement state */
-	void UpdateAnimation();
+	//void UpdateAnimation();
 
 	/** Called for side to side input */
-	void MoveRight(float Value);
+//	void MoveRight(float Value);
 
-	void UpdateCharacter();
+	//void UpdateCharacter();
 
 	// APawn interface
-	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
+	//virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 	// End of APawn interface
 
 public:
