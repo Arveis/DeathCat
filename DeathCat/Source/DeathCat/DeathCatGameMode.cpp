@@ -12,4 +12,4 @@ ADeathCatGameMode::ADeathCatGameMode()
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
-}
+} 
