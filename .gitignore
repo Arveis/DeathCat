@@ -73,3 +73,9 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+DeathCat/Binaries/Win64/UE4Editor-DeathCat-4039.pdb
+DeathCat/Binaries/Win64/UE4Editor-DeathCat-2451.dll
+DeathCat/Binaries/Win64/UE4Editor-DeathCat-2312.pdb
+DeathCat/Binaries/Win64/UE4Editor-DeathCat-2451.pdb
+DeathCat/Binaries/Win64/UE4Editor-DeathCat-2312.dll
+DeathCat/Binaries/Win64/UE4Editor-DeathCat-4039.dll
