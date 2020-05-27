@@ -60,60 +60,66 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 
 	UFUNCTION(BlueprintCallable)
-		int32 GetMaxBulletCounter() const { return MaxBulletCounter; }
+	int32 GetMaxBulletCounter() const { return MaxBulletCounter; }
 
 	UFUNCTION(BlueprintCallable)
-		int32 GetCurrentBulletCounter() const { return CurrentBulletCounter; }
+	int32 GetCurrentBulletCounter() const { return CurrentBulletCounter; }
 
 	UFUNCTION(BlueprintCallable)
-		void SetCurrentBulletCounter(int32 DeltaBullets);
+	void SetCurrentBulletCounter(int32 DeltaBullets);
 
 	UFUNCTION(BlueprintCallable)
-		int32 GetMaxHP() const { return MaxHP; }
+	int32 GetMaxHP() const { return MaxHP; }
 
 	UFUNCTION(BlueprintCallable)
-		int32 GetCurrentHP() const { return CurrentHP; }
+	int32 GetCurrentHP() const { return CurrentHP; }
 
 	UFUNCTION(BlueprintCallable)
-		void SetCurrentHP(int32 DeltaHP);
+	void SetCurrentHP(int32 DeltaHP);
 
 	UFUNCTION(BlueprintCallable)
-		void SetHP(int32 ValueHP);
+	void SetHP(int32 ValueHP);
 
 	UFUNCTION(BlueprintCallable)
-		bool IsPlayerDead() const { return bIsDead; }
+	bool IsPlayerDead() const { return bIsDead; }
 
 	UFUNCTION(BlueprintCallable)
-		void SwitchIsPlayerDead() { bIsDead = !IsPlayerDead(); }
+	void SwitchIsPlayerDead() { bIsDead = !IsPlayerDead(); }
 
 	UFUNCTION(BlueprintCallable)
-		bool IsEndOfLevel() const { return bIsEndOfLevel; }
+	bool IsEndOfLevel() const { return bIsEndOfLevel; }
 
 	UFUNCTION(BlueprintCallable)
-		void SwitchIsEndOfLevel() { bIsEndOfLevel = !IsEndOfLevel(); };
+	void SwitchIsEndOfLevel() { bIsEndOfLevel = !IsEndOfLevel(); };
 
 	UFUNCTION(BlueprintCallable)
-		bool IsPlayerHit() const { return hittrue; }
+	bool IsPlayerHit() const { return hittrue; }
 
 	UFUNCTION(BlueprintCallable)
-		void SwitchIsPlayerHit();
+	void SwitchIsPlayerHit();
+
+	UFUNCTION(BlueprintCallable)
+	FName GetFatedItemTag() const { return FatedItemTag; }
 
 protected:
 	UPROPERTY(EditAnywhere)
-		int32 MaxBulletCounter = 10;
+	int32 MaxBulletCounter = 10;
 
 	int32 CurrentBulletCounter = 10;
 
 	UPROPERTY(EditAnywhere)
-		int32 MaxHP = 10;
+	int32 MaxHP = 10;
 
 	int32 CurrentHP = 10;
 
 	UPROPERTY(EditAnywhere)
-		bool hittrue = false;
+	bool hittrue = false;
 
 	bool bIsDead = false;
 
 	bool bIsEndOfLevel = false;
+
+	UPROPERTY(EditAnywhere)
+	FName FatedItemTag = L"";
 
 };
